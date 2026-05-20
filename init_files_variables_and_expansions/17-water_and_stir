@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "ibase=5;obase=9;$(echo $WATER | tr 'water' '0-4') + $(echo $STIR | tr 'stir' '0-3')" | bc | tr '0-8' 'bestchol'
